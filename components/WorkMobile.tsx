@@ -21,6 +21,7 @@ const WorkMobile = () => {
         return (
           <div
             key={item.id}
+            // @ts-expect-error
             style={{ "--i": item.id }}
             className="work-item-container"
           >

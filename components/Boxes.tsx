@@ -5,7 +5,7 @@ type BoxesProps = {
 };
 
 const Boxes = ({ inverted }: BoxesProps) => {
-  const boxRef = useRef<HTMLElement>(null);
+  const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     boxAnimationHandle();
@@ -17,6 +17,7 @@ const Boxes = ({ inverted }: BoxesProps) => {
     if (inverted) {
       boxRef.current?.childNodes.forEach((box) => {
         let randomNumber = Math.random();
+        // @ts-expect-error
         box.style.animation = `moveBoxInverted ${
           randomNumber * 3 + 1
         }s ease infinite ${randomNumber * 4.5}s`;
@@ -24,6 +25,7 @@ const Boxes = ({ inverted }: BoxesProps) => {
     } else {
       boxRef.current?.childNodes.forEach((box) => {
         let randomNumber = Math.random();
+        // @ts-expect-error
         box.style.animation = `moveBox ${
           randomNumber * 3 + 0.5
         }s ease infinite ${randomNumber * 4.5}s`;
