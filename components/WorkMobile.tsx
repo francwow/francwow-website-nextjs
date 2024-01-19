@@ -9,7 +9,7 @@ const WorkMobile = () => {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundBlendMode: "overlay",
-      backgroundColor: "rgb(5, 5, 13, .9)",
+      backgroundColor: "var(--bg-color-cover)",
     };
 
     return style;
@@ -25,7 +25,7 @@ const WorkMobile = () => {
             style={{ "--i": item.id }}
             className="work-item-container"
           >
-            <div className="work-item">
+            <div className="work-item hover-false">
               <div className="work-item-link">
                 <Link href={item.link} target="_blank">
                   <i className="symbol material-symbols-outlined md-30">
