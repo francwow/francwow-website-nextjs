@@ -729,6 +729,10 @@ i.symbol {
   border-radius: 5px;
 }
 
+.hobbies-header h2 {
+  font-size: 1.5rem;
+}
+
 .desc-overlay {
   position: absolute;
   width: 110%;
