@@ -27,12 +27,14 @@ const Contact = () => {
               </span>
             </p>
             <div className="link-container">
-              <button className="btn">
-                <Link href={"mailto:francwow06@gmail.com"}>SEND EMAIL</Link>
-                {/* // onClick={(e) => {
-                  window.location = "mailto:francwow06@gmail.com";
+              <button
+                onClick={(e) => {
+                  window.location.href = "mailto:francwow06@gmail.com";
                   e.preventDefault();
-                }} */}
+                }}
+                className="btn"
+              >
+                SEND EMAIL
               </button>
             </div>
           </div>
@@ -49,12 +51,14 @@ const Contact = () => {
               </span>
             </p>
             <div className="link-container">
-              <button className="btn">
-                <Link href={"mailto:francwow06@gmail.com"}>CONTACTAR</Link>
-                {/* // onClick={(e) => {
-                  window.location = "mailto:francwow06@gmail.com";
+              <button
+                onClick={(e) => {
+                  window.location.href = "mailto:francwow06@gmail.com";
                   e.preventDefault();
-                }} */}
+                }}
+                className="btn"
+              >
+                CONTACTAR
               </button>
             </div>
           </div>
