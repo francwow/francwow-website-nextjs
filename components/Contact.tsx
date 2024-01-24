@@ -20,12 +20,14 @@ const Contact = () => {
             <p>
               I&apos;m eager to continue growing as a front-end developer. Send
               me a message anytime.
-              <br />
-              <br />
-              <span className="p-2 bg-gray-800 rounded-md">
-                francwow06@gmail.com | +57 3132105286
-              </span>
             </p>
+            <div className="contact-info">
+              <span className="p-2 bg-gray-800 rounded-md">
+                francwow06@gmail.com
+              </span>
+              <span className="p-2 bg-gray-800 rounded-md">+57 3132105286</span>
+            </div>
+
             <div className="link-container">
               <button
                 onClick={(e) => {
@@ -47,8 +49,9 @@ const Contact = () => {
               <br />
               <br />
               <span className="p-2 bg-gray-800 rounded-md">
-                francwow06@gmail.com | +57 3132105286
+                francwow06@gmail.com |
               </span>
+              <span className="p-2 bg-gray-800 rounded-md">+57 3132105286</span>
             </p>
             <div className="link-container">
               <button

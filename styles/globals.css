@@ -715,6 +715,7 @@ i.symbol {
 
 .about-intro-description a {
   color: var(--bg-color-three);
+  display: inline-block;
 }
 
 .about-intro-img {
@@ -924,7 +925,6 @@ i.symbol {
 
 .contact-wrapper h1 {
   font-size: 2.5rem;
-  margin: 20px 0px;
   animation: headerLeft 2s ease forwards;
 }
 
@@ -932,6 +932,26 @@ i.symbol {
   font-family: var(--font-body);
   font-weight: 400;
   line-height: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-container span {
+  display: inlin-block;
+  position: relative;
+}
+
+.contact-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* <Footer /> */
@@ -1544,14 +1564,12 @@ i.symbol {
   /* <Contact /> */
   .contact-wrapper h1 {
     font-size: 2.8rem;
-    margin: 30px 20px;
   }
 
   .contact-wrapper p {
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 22px;
-    margin: 30px 20px;
     font-size: 1.2rem;
   }
 
@@ -1859,15 +1877,21 @@ i.symbol {
   /* <Contact /> */
   .contact-wrapper h1 {
     font-size: 3rem;
-    margin: 30px 20px;
   }
 
   .contact-wrapper p {
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 22px;
-    margin: 30px 20px;
     font-size: 1.3rem;
+  }
+
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-info {
+    flex-direction: row;
   }
 
   /* Other Styles */

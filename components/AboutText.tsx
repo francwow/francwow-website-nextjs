@@ -100,19 +100,36 @@ export const WorkText = () => {
           website and picking the right color composition, to writing DRY
           Javascript and meaningful CSS classes. My background in advertising
           and marketing has helped in my journey as a web developer. Currently
-          my front-end stack includes{" "}
+          my front-end stack includes &#160;
           <span className="yellow-text">
             HTML, CSS, JavaScript, Figma, Visual Studio Code and React
           </span>
-          . Im also learning to work with{" "}
+          . Im also learning to work with &#160;
           <span className="yellow-text">
             React Native, Next.js, Node.js, TypeScript, ChatGPT(OpenAI), SCSS
           </span>
           .<br></br>
           <br></br>
           I&apos;ve had the opportunity of working on freelance projects for
-          real clients, and playing with fun personal ideas. You can find all my
-          work <Link href="/work">here</Link>.
+          real clients, and playing with fun personal ideas.
+        </p>
+        <p>
+          You can find all my work &#160;
+          <Link className="intro-description-link" href="/work">
+            here.
+          </Link>
+          <br />
+          You can also download my &#160;
+          <Link
+            className="intro-description-link"
+            href={"/cv.pdf"}
+            download={"cv"}
+            target="_blank"
+            rel="noopener noreferrer"
+            locale={false}
+          >
+            CV.
+          </Link>
         </p>
       </div>
     ) : (
@@ -124,19 +141,37 @@ export const WorkText = () => {
           clases significativas en CSS, disfruto mucho todo el proceso. Tengo un
           background en publicidad y marketing que me ha servido mucho a la hora
           de diseñar y escribir código. Actualmente mi stack de desarrollo
-          front-end incluye{" "}
+          front-end incluye &#160;
           <span className="yellow-text">
             HTML, CSS, JavaScript, Figma, Visual Studio Code y React
           </span>
-          . También continúo aprediendo nuevas herramientas y tecnologías como{" "}
+          . También continúo aprediendo nuevas herramientas y tecnologías como
+          &#160;
           <span className="yellow-text">
             React Native, Next.js, Node.js, TypeScript, ChatGPT(OpenAI), SCSS
           </span>
           .<br></br>
           <br></br>
           Este año he tenido la oportunidad de trabajar en proyectos freelance
-          para clientes reales y desarrollar ideas divertidas. Puedes encontrar
-          todo mi trabajo <Link href="/work">aquí</Link>.
+          para clientes reales y desarrollar ideas divertidas.
+        </p>
+        <p>
+          Puedes encontrar todo mi trabajo &#160;
+          <Link className="intro-description-link" href="/work">
+            aquí.
+          </Link>
+          <br />
+          También puedes descargar mi &#160;
+          <Link
+            className="intro-description-link"
+            href={"/cv.pdf"}
+            download={"cv"}
+            target="_blank"
+            rel="noopener noreferrer"
+            locale={false}
+          >
+            HV.
+          </Link>
         </p>
       </div>
     );

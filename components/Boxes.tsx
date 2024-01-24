@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useEffect } from "react";
 
 type BoxesProps = {
@@ -8,30 +10,30 @@ const Boxes = ({ inverted }: BoxesProps) => {
   const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    function boxAnimationHandle() {
+      if (inverted) {
+        boxRef.current?.childNodes.forEach((box) => {
+          let randomNumber = Math.random();
+          // @ts-expect-error
+          box.style.animation = `moveBoxInverted ${
+            randomNumber * 3 + 1
+          }s ease infinite ${randomNumber * 4.5}s`;
+        });
+      } else {
+        boxRef.current?.childNodes.forEach((box) => {
+          let randomNumber = Math.random();
+          // @ts-expect-error
+          box.style.animation = `moveBox ${
+            randomNumber * 3 + 0.5
+          }s ease infinite ${randomNumber * 4.5}s`;
+        });
+      }
+    }
+
     boxAnimationHandle();
 
     return () => {};
-  }, []);
-
-  function boxAnimationHandle() {
-    if (inverted) {
-      boxRef.current?.childNodes.forEach((box) => {
-        let randomNumber = Math.random();
-        // @ts-expect-error
-        box.style.animation = `moveBoxInverted ${
-          randomNumber * 3 + 1
-        }s ease infinite ${randomNumber * 4.5}s`;
-      });
-    } else {
-      boxRef.current?.childNodes.forEach((box) => {
-        let randomNumber = Math.random();
-        // @ts-expect-error
-        box.style.animation = `moveBox ${
-          randomNumber * 3 + 0.5
-        }s ease infinite ${randomNumber * 4.5}s`;
-      });
-    }
-  }
+  }, [inverted]);
 
   let boxes = [];
   for (let i = 0; i < 12; i++) {

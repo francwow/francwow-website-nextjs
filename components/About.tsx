@@ -30,10 +30,12 @@ const About = () => {
           {deskTop ? (
             <div className="about-intro-text">
               <IntroText />
-              <WorkText />
+              <div>
+                <WorkText />
+              </div>
             </div>
           ) : (
-            <div>
+            <div className="about-intro-text">
               <IntroText />
             </div>
           )}
@@ -52,7 +54,11 @@ const About = () => {
               priority
             />
           </div>
-          {deskTop ? null : <WorkText />}
+          {deskTop ? null : (
+            <div className="about-intro-text">
+              <WorkText />
+            </div>
+          )}
         </div>
         <div className="about-hobbies">
           <Boxes inverted={true} />
@@ -64,7 +70,7 @@ const About = () => {
               }
             ></div>
             <Image
-              loading="lazy"
+              priority
               src="/aboutpic.webp"
               alt="office desk"
               width={600}
