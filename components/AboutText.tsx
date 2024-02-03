@@ -95,8 +95,8 @@ export const WorkText = () => {
     return englishActive ? (
       <div className="about-intro-description">
         <p>
-          I&apos;ve been learning front-end development for the last 12 months,
-          I love everything about this craft, from designing the layout of a
+          I&apos;ve been learning front-end development for the last 2 years, I
+          love everything about this craft, from designing the layout of a
           website and picking the right color composition, to writing DRY
           Javascript and meaningful CSS classes. My background in advertising
           and marketing has helped in my journey as a web developer. Currently
@@ -135,7 +135,7 @@ export const WorkText = () => {
     ) : (
       <div className="about-intro-description">
         <p>
-          He estado aprendiendo desarrollo front-end los últimos 12 meses. Me
+          He estado aprendiendo desarrollo front-end los últimos 2 años. Me
           encanta todo acerca de este oficio, desde el diseño del layout y la
           elección de los colores adecuados, hasta escribir DRY Javascript y
           clases significativas en CSS, disfruto mucho todo el proceso. Tengo un
