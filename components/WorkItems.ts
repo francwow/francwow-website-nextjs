@@ -27,7 +27,7 @@ export const workItems = [
   {
     heading: "Hostal Sep7imo Arte Website",
     imgsrc: "/hostal.webp",
-    link: "https://hostal-septimoarte.vercel.app/",
+    link: "https://hostalsep7imoarte.com/",
     github: "https://github.com/francwow/hostal-septimoarte",
     id: 3,
     languages: "Nextjs | TypeScript | CSS",
