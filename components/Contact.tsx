@@ -46,13 +46,14 @@ const Contact = () => {
             <p>
               Estoy ansioso por continuar creciendo como desarrollador
               front-end. Envíame un mensaje en cualquier momento.
-              <br />
-              <br />
+            </p>
+            <div className="contact-info">
               <span className="p-2 bg-gray-800 rounded-md">
-                francwow06@gmail.com |
+                francwow06@gmail.com
               </span>
               <span className="p-2 bg-gray-800 rounded-md">+57 3132105286</span>
-            </p>
+            </div>
+
             <div className="link-container">
               <button
                 onClick={(e) => {
@@ -61,7 +62,7 @@ const Contact = () => {
                 }}
                 className="btn"
               >
-                CONTACTAR
+                CONTACTAR ~
               </button>
             </div>
           </div>
