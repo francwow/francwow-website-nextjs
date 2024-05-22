@@ -2,7 +2,7 @@ export const workItems = [
   {
     heading: "GreenRoots Website",
     imgsrc: "/green-roots.webp",
-    link: "https://www.greenrootscol.co/",
+    link: "https://green-roots-next-js.vercel.app/",
     github: "https://github.com/francwow/green-roots-next-js.git",
     id: 0,
     languages: "Nextjs | TypeScript | Tailwind CSS",
