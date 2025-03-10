@@ -2,7 +2,7 @@ export const workItems = [
   {
     heading: "Mariposa Azul Website",
     imgsrc: "/mariposa-azul.webp",
-    link: "https://www.mariposaazul.com.co/",
+    link: "https://mariposa-azul-nextjs.vercel.app/",
     github: "https://github.com/francwow/mariposa-azul-nextjs",
     id: 0,
     languages: "Nextjs | TypeScript | CSS",
@@ -50,7 +50,7 @@ export const workItems = [
   {
     heading: "Latiendo Website",
     imgsrc: "/latiendo.webp",
-    link: "https://www.latiendo.co/",
+    link: "https://latiendo.vercel.app/",
     github: "https://github.com/francwow/latiendo",
     id: 6,
     languages: "HTML | CSS | JavaScript",
